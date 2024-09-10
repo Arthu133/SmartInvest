@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class AtivoController {
 
     @Autowired
-    private AtivoService ativoService;
+    private AtivoService AtivoService;
 
     @PostMapping("/carteira/{carteiraId}")
     public Ativo adicionarAtivo(@PathVariable Long carteiraId, @RequestBody Ativo ativo) {
